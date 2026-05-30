@@ -83,11 +83,11 @@ const PLATAFORMAS: Plataforma[] = [
     cor: "#25d366",
     bg: "#25d36615",
     emoji: "💬",
-    descricao: "Links públicos chat.whatsapp.com",
+    descricao: "Sites com grupos públicos listados",
     gerarLinks: (kws: string[]): LinkItem[] => [
-      { label: "Links de convite indexados no Google", url: `https://www.google.com/search?q=${encodeURIComponent(`"chat.whatsapp.com" "${kws[0]}"`)}` },
-      { label: "Grupos em sites agregadores", url: `https://www.google.com/search?q=${encodeURIComponent(`"chat.whatsapp.com" ${kws[0]} grupos site:participei.com.br OR site:whatsappgrupos.net OR site:gruposwhats.com`)}` },
-      { label: "Posts públicos com link de grupo", url: `https://www.google.com/search?q=${encodeURIComponent(`"entrar no grupo" "chat.whatsapp.com" ${kws[0]}`)}` },
+      { label: "Participei.com.br — buscar grupos", url: `https://www.participei.com.br/grupos-de-whatsapp/${encodeURIComponent(kws[0].replace(/ /g, "-"))}` },
+      { label: "WhatsAppGrupos.net — buscar grupos", url: `https://whatsappgrupos.net/?s=${encodeURIComponent(kws[0])}` },
+      { label: "GruposWhats.com — buscar grupos", url: `https://www.gruposwhats.com/?s=${encodeURIComponent(kws[0])}` },
     ],
   },
   {
