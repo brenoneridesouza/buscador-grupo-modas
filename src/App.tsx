@@ -77,19 +77,7 @@ const PLATAFORMAS: Plataforma[] = [
       { label: `#grupowhatsapp${kws[0].split(" ")[0]}`, url: `https://www.instagram.com/explore/tags/${encodeURIComponent("grupowhatsapp" + kws[0].split(" ")[0])}` },
     ],
   },
-  {
-    id: "whatsapp",
-    nome: "WhatsApp",
-    cor: "#25d366",
-    bg: "#25d36615",
-    emoji: "💬",
-    descricao: "Sites com grupos públicos listados",
-    gerarLinks: (kws: string[]): LinkItem[] => [
-      { label: "Participei.com.br — buscar grupos", url: `https://www.participei.com.br/grupos-de-whatsapp/${encodeURIComponent(kws[0].replace(/ /g, "-"))}` },
-      { label: "WhatsAppGrupos.net — buscar grupos", url: `https://whatsappgrupos.net/?s=${encodeURIComponent(kws[0])}` },
-      { label: "GruposWhats.com — buscar grupos", url: `https://www.gruposwhats.com/?s=${encodeURIComponent(kws[0])}` },
-    ],
-  },
+
   {
     id: "telegram",
     nome: "Telegram",
